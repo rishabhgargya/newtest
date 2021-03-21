@@ -1,0 +1,236 @@
+body
+{
+	margin:0;
+	font-family: verdana;
+}
+
+
+*
+{
+	font-weight: normal;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+
+.left
+{
+	position: fixed;
+	top:0;
+	left:0;
+	width: 20%;
+	height: 100vh;
+	overflow: auto;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+}
+.left .item
+{
+	padding: 5%;
+}
+.left .item a
+{
+	display: block;
+	padding: 10px;
+	color:black;
+}
+.right
+{
+	right: 0;
+	top:0;
+	position: absolute;
+	width: 80%;
+}
+.right .header
+{
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 200%;
+}
+
+.right .banner
+{
+	position: relative;
+	padding: 2%;
+}
+.right .banner img
+{
+	width: 100%;
+
+}
+.right .banner .box
+{
+	position: absolute;
+	top:0;
+	left:0;
+	margin:5%;
+	color:white;
+}
+.right .banner .box h1
+{
+	font-size: 300%;
+}
+.right .banner .box button
+{
+	padding: 10px 30px;
+	background: black;
+	color:white;
+	border:0;
+	font-size: 200%;
+}
+
+.right .products
+{
+	padding: 2%;
+}
+.right .products .flex
+{
+	display: flex;
+	flex-flow: wrap;
+}
+.right .products .flex  .item
+{
+	position: relative;
+	width: 24%;
+	margin-right:1%;
+} 
+.right .products .flex  .item img
+{
+	width: 100%;
+	filter: saturate(40%);
+}
+.right .products .flex  .item .sale
+{
+	position: absolute;
+	top:0;
+	left:0;
+	padding: 10px;
+	background: black;
+	color:white;
+}
+.right .products .flex  .item button
+{
+	padding: 10px;
+	border:0;
+	background: black;
+	color:white;
+	position: absolute;
+	top:50%;
+	left:50%;	
+	transform: translate(-50%,-150%);
+	opacity: 0;
+}
+
+.right .products .flex  .item:hover button
+{
+	opacity: 1;
+}
+
+.right .subscribe
+{
+	padding: 5%;
+	background: black;
+	color:white;
+}
+.right .subscribe input
+{
+	padding: 10px;
+	border:0;
+}
+.right .subscribe button
+{
+	padding: 10px;
+	border:0;
+	background: tomato;
+	color:white;
+}
+.footer
+{
+	padding: 2%;
+	display: flex;
+}
+.footer .item
+{
+	width: 30%;
+	margin-right: 3.3%;
+	text-align: center;
+}
+.footer .item-left
+{
+	text-align: left;
+}
+.footer .item button,
+.footer .item input
+{
+	width: 100%;
+	padding: 10px;
+	margin-top: 2%;
+}
+.footer .item button
+{
+	background: black;
+	color:white;
+	border-color: black;
+}
+
+.footer .item a
+{
+	display: block;
+	line-height: 30px;
+	color:black;
+	text-decoration: underline;
+}
+.footer .item .line
+{
+	display: flex;
+	align-items: center;
+	margin-bottom: 5%;
+}
+.footer .item .line .l
+{
+	width: 10%;
+}
+
+footer
+{
+	padding: 5%;
+	background: black;
+	color:white;
+	text-align: center;
+}
+
+@media (max-width:768px)
+{
+	.left
+	{
+		width: 30%;
+	}
+	.right
+	{
+		width: 70%;
+	}
+	.right .banner .box button,
+	.right .banner .box h1
+	{
+		font-size: 100%;
+	}
+	.right .products .flex .item
+	{
+		width:auto;
+	}
+	.footer
+	{
+		flex-flow: column;	
+	}
+	.footer .item
+	{
+		width:auto;
+	}
+}
+
+
+
+
+
